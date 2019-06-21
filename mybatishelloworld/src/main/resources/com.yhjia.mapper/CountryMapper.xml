@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yhjia.mapper.CountryMapper">
+    <!--定义的查询  resultType：定义了当前查询的返回值类型-->
+    <select id="selectAll" resultType="Country">
+        SELECT id,countryname,countrycode FROM country
+    </select>
+</mapper>

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    name: mybatis
+    url:  jdbc:mysql://localhost:3306/mybatis
+    dbcp2:
+      username: root
+      password: root123456
+      driver-class-name: com.mysql.jdbc.Driver
+
+# 整合mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # 对应mapper 文件
+  type-aliases-package: com.yhjia.entity  # 对应实体类的bean
